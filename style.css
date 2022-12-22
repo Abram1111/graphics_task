@@ -328,7 +328,7 @@ body {
 	border-radius: 5px;
 	color: white;
 	padding: 8px;
-	background-color: rgb(8, 8, 121);
+	background-color: rgba(6, 6, 83, 0.838);
 	cursor: pointer;
 }
 
