@@ -12,14 +12,36 @@
 
 <body>
     <div class="inputs">
-        <input class="up" type="number" placeholder="Y Direction">
-        <input class="left" type="number" placeholder="X Direction">
-        <button class="transformButton">transform</button>
-        <input class="rotate" type="number" placeholder="rotate Clockwise">
-        <button class="rotatingButton">rotate</button>
-        <input class="scaleX" type="number" placeholder="scale in X">
-        <input class="scaleY" type="number" placeholder="scale in Y">
-        <button class="scalingButton">scale</button>
+        <div class="group">
+            <div class="form__group field">
+                <input type="number" class="form__field up" placeholder="Y Direction" id='Y' />
+                <label for="Y" class="form__label">Y Direction</label>
+            </div>
+            <div class="form__group field">
+                <input type="number" class="form__field left" placeholder="X Direction" id='X' />
+                <label for="X" class="form__label">X Direction</label>
+            </div>
+            <button class="transformButton">transform</button>
+        </div>
+        <div class="group">
+            <div class="form__group field">
+                <input type="number" class="form__field rotate" placeholder="rotate Clockwise" id='r' />
+                <label for="r" class="form__label">rotate Clockwise</label>
+            </div>
+            <button class="rotatingButton">rotate</button>
+        </div>
+        <div class="group">
+            <div class="form__group field">
+                <input type="number" class="form__field scaleX" placeholder="scale in X" id='sx' />
+                <label for="sx" class="form__label">scale in X</label>
+            </div>
+            <div class="form__group field">
+                <input type="number" class="form__field scaleY" placeholder="scale in Y" id='sy' />
+                <label for="sy" class="form__label">scale in Y</label>
+            </div>
+            <button class="scalingButton">scale</button>
+        </div>
+
     </div>
     <div class="graphic_space">
         <div id="mickey">
@@ -58,7 +80,10 @@
             </div>
         </div>
     </div>
-
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label">Name</label>
+    </div>
 
     <script src="main.js"></script>
 </body>

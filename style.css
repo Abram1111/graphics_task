@@ -308,17 +308,15 @@ body {
 }
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 
 .inputs input {
 	outline: none;
-	border: none;
-	background-color: #000;
-	color: white;
-	border-radius: 5px;
-	padding: 8px;
-	width: 80%;
-	margin: 10px;
-	margin-left: 0;
+	width: 100%;
 }
 
 .inputs button {
@@ -330,6 +328,9 @@ body {
 	padding: 8px;
 	background-color: rgba(6, 6, 83, 0.838);
 	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1rem;
 }
 
 .inputs {
@@ -356,3 +357,79 @@ body {
 	margin-bottom: 10px;
 	margin-right: 10px;
 }
+
+.form__group {
+	position: relative;
+	padding: 15px 0 0;
+	/* margin-top: 10px; */
+	width: 80%;
+}
+
+.form__field {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid black;
+	outline: 0;
+	font-size: 1rem;
+	color: black;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+	color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+	font-size: 1rem;
+	cursor: text;
+	top: 20px;
+}
+
+
+.form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: .8rem;
+	color: white;
+}
+
+.form__field:focus {
+
+	padding-bottom: 6px;
+	font-weight: 700;
+	border-width: 3px;
+	border-image: linear-gradient(to right, #38ef7d, #11998e);
+	border-image-slice: 1;
+}
+
+.form__field:focus .form__label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #11998e;
+	font-weight: 700;
+}
+
+.group {
+	background-color: #9b9b9b76;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.group:not(:first-child) {
+	margin-top: 10px;
+}
+
+/* reset input */
