@@ -16,30 +16,25 @@ function upCircle() {
 }
 
 function leftCircle() {
-    circleLeft -= +left.value
+    circleLeft += +left.value
 }
 
+scaleX.value=+1
+scaleY.value=+1
 let rotation = 0;
 rotatingButton.onclick = function () {
     rotation = (rotation + +rotate.value) % 360
-    circle.style.transform += `rotate(${rotation}deg)`
+    circle.style.transform = `rotate(${rotation}deg)`
+    circle.style.transform += `scale(${+scaleX.value},${+scaleY.value})`
 }
 
 scalingButton.onclick = function () {
-    circle.style.transform += `scale(${+scaleX.value},${+scaleY.value})`
-
+    circle.style.transform = `scale(${+scaleX.value},${+scaleY.value})`
+    circle.style.transform += `rotate(${rotation}deg)`
 }
 transformButton.onclick = function () {
     upCircle()
     leftCircle()
     circle.style.top = circleTop + 'px'
     circle.style.left = circleLeft + 'px'
-}
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function () {
-    output.innerHTML = this.value;
 }
