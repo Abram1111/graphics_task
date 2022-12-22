@@ -1,0 +1,41 @@
+body{
+    height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputs{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    top: 20px;
+    left: 20px;
+}
+
+.circle{
+    background-color: rgba(134, 134, 148, 0.856);
+    width:300px;
+    height:300px;
+    position: relative;
+    border-radius: 50%;
+    border-color:black red yellow blue ;
+    border-width: 10px ;
+    border-style:solid ;
+    top:0px;
+    left: 10px;
+    z-index: 1;
+}
+
+.circle .square{
+    position: absolute;
+    content: '';
+    width:100px;
+    height: 100px;
+    background-color: green;
+    top:100px;
+    left: 100px;
+}
