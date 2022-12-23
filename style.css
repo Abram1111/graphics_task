@@ -25,10 +25,6 @@ body {
 	border-radius: 50%;
 	top: 260px;
 	left: 165px;
-	animation-name: mic;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
 }
 
 .ear {
@@ -36,10 +32,6 @@ body {
 	width: 190px;
 	height: 220px;
 	border-radius: 50%;
-	animation-name: mic;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
 }
 
 .ear.left {
@@ -72,19 +64,10 @@ body {
 
 .front.left {
 	left: 60px;
-	animation-name: mic;
-	animation-duration: 6s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .front.right {
 	right: 90px;
-	animation-name: mic;
-	animation-duration: 10s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-
 }
 
 .cheek {
@@ -101,11 +84,6 @@ body {
 	transform: rotate(-45deg);
 	border-right: 0;
 	border-bottom: 0;
-	animation-name: mic;
-	animation-duration: 12s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-
 }
 
 .cheek.right {
@@ -113,10 +91,6 @@ body {
 	transform: rotate(45deg);
 	border-bottom: 0;
 	border-left: 0;
-	animation-name: mic;
-	animation-duration: 16s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .chin {
@@ -127,10 +101,6 @@ body {
 	border-bottom: 5px solid #000;
 	bottom: 0;
 	left: 170px;
-	animation-name: mic;
-	animation-duration: 18s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth-wrapper {
@@ -150,10 +120,6 @@ body {
 	bottom: 70px;
 	left: 15px;
 	border-radius: 50%;
-	animation-name: mic;
-	animation-duration: 27s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth-wrapper .line {
@@ -167,19 +133,11 @@ body {
 .mouth-wrapper .line.left {
 	left: 0;
 	transform: rotate(-20deg);
-	animation-name: mic;
-	animation-duration: 22s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth-wrapper .line.right {
 	right: 10px;
 	transform: rotate(20deg);
-	animation-name: mic;
-	animation-duration: 24s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth {
@@ -194,10 +152,6 @@ body {
 	bottom: 0;
 	background-color: #000;
 	border-radius: 50%;
-	animation-name: mic;
-	animation-duration: 23s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth .tong1 {
@@ -207,10 +161,6 @@ body {
 	border-radius: 50%;
 	bottom: -50px;
 	left: 0;
-	animation-name: mic;
-	animation-duration: 25s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .mouth .tong2 {
@@ -221,10 +171,6 @@ body {
 	border-radius: 50%;
 	bottom: -50px;
 	right: 0;
-	animation-name: mic;
-	animation-duration: 29s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .eyes {
@@ -251,19 +197,11 @@ body {
 .eye.left {
 	transform: rotate(-5deg);
 	left: 0;
-	animation-name: mic;
-	animation-duration: 26s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .eye.right {
 	right: 0;
 	transform: rotate(5deg);
-	animation-name: mic;
-	animation-duration: 30s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .pupil {
@@ -358,10 +296,6 @@ body {
 	top: 270px;
 	border-top: 8px solid #000;
 	background-color: #FFF;
-	animation-name: mic;
-	animation-duration: 32s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 .nose {
@@ -371,10 +305,6 @@ body {
 	border-radius: 48%;
 	left: 175px;
 	top: 290px;
-	animation-name: mic;
-	animation-duration: 35s;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
 }
 
 
@@ -503,95 +433,3 @@ input::-webkit-inner-spin-button {
 }
 
 /* reset input */
-
-@keyframes mic {
-	0% {
-		transform: translate(-1000px, -1000px);
-	}
-
-	100% {
-		transform: translate(0);
-	}
-
-
-
-}
-
-.hat {
-	background-color: rgb(0 25 83 / 100%);
-	width: 245px;
-	height: 130px;
-	/* border-radius: 50%; */
-	animation-name: mic;
-	animation-duration: 4s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	top: 195px;
-	left: 298px;
-
-}
-
-.hat_extention {
-	background-color: rgb(0 25 83 / 88%);
-	width: 130px;
-	height: 130px;
-	animation-name: mic;
-	animation-duration: 8s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	top: 150px;
-	left: 298px;
-}
-
-.out_line {
-
-	width: 661px;
-	height: 656px;
-	border: 20px solid rgb(20, 4, 58);
-	left: 70px;
-	top: 120px;
-
-}
-
-.triangle {
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	top: 697px;
-	left: 90px;
-	z-index: 100;
-	animation-name: mic;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-}
-
-.in {
-	width: 100%;
-	height: 100%;
-	background: rgb(20, 4, 58);
-	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
-	clip-path: polygon(0 0, 0 100%, 100% 100%);
-}
-
-.triangle2 {
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	top: 697px;
-	left: 651px;
-	z-index: 100;
-	transform: rotateY(180deg);
-	animation-name: mic;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-}
-
-.in2 {
-	width: 100%;
-	height: 100%;
-	background: rgb(20, 4, 58);
-	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%);
-	clip-path: polygon(0 0, 0 100%, 100% 100%);
-}

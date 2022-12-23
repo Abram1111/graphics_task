@@ -19,38 +19,18 @@ function leftCircle() {
     circleLeft += +left.value
 }
 
-scaleX.value = +1
-scaleY.value = +1
-
+scaleX.value=+1
+scaleY.value=+1
 let rotation = 0;
 rotatingButton.onclick = function () {
     rotation = (rotation + +rotate.value) % 360
     circle.style.transform = `rotate(${rotation}deg)`
     circle.style.transform += `scale(${+scaleX.value},${+scaleY.value})`
-    if (+scaleX.value <= 0 || +scaleY.value <= 0) {
-        circle.style.transform = `rotate(${rotation}deg)`
-        circle.style.transform += `scale(1,1)`
-    }
 }
 
 scalingButton.onclick = function () {
     circle.style.transform = `scale(${+scaleX.value},${+scaleY.value})`
     circle.style.transform += `rotate(${rotation}deg)`
-    if (+scaleX.value <= 0 || +scaleY.value <= 0) {
-        circle.style.transform += `scale(1,${+scaleY.value})`
-        circle.style.transform = `rotate(${rotation}deg)`
-        alert()
-    }
-    else if (+scaleX.value > 0 && +scaleY.value <= 0) {
-        circle.style.transform = `rotate(${rotation}deg)`
-        circle.style.transform += `scale(1,1)`
-        alert()
-    }
-    else if (+scaleX.value <= 0 && +scaleY.value > 0) {
-        circle.style.transform = `rotate(${rotation}deg)`
-        circle.style.transform += `scale(1,1)`
-        alert()
-    }
 }
 transformButton.onclick = function () {
     upCircle()
