@@ -1,5 +1,5 @@
 // Define the classe of the mickey shape to make the transformitions on it
-
+// git each element id to control it 
 let mickey = document.getElementById('mickey')
 let triangle = document.getElementById('triangle')
 let triangle2 = document.getElementById('triangle2')
@@ -26,35 +26,28 @@ let mouth_wrapper = document.getElementById('mouth_wrapper')
 let cheeks = document.getElementById('cheeks')
 
 
-
-
-
-
-
-
-// define the button and the inputs that are used to make the translation on the shape
-
+/******************************************************************
+ * Buttons
+ *****************************************************************/
 let transformButton = document.querySelector('.transformButton')
-let mickey_btn = document.querySelector('.mickey_btn')
+let scalingButton = document.querySelector('.scalingButton')
+let rotatingButton = document.querySelector('.rotatingButton')
 
 
+/******************************************************************
+ * INPUT FIELDS
+ *****************************************************************/
 
 let up = document.querySelector('.up')
 let left = document.querySelector('.left')
-
-// define the button and the inputs that are used to make the rotation on the shape
-
-let rotatingButton = document.querySelector('.rotatingButton')
 let rotate = document.querySelector('.rotate')
-
-// define the button and the inputs that are used to make the scalling on the shape
-
-let scalingButton = document.querySelector('.scalingButton')
 let scaleX = document.querySelector('.scaleX')
 let scaleY = document.querySelector('.scaleY')
 
-
-//comput the top and the left of the shape to change it when apply the translation function
+/******************************************************************
+ * Comput the top and the left of the shapes
+ * to change it when apply the translation function
+ *****************************************************************/
 let mickeyTop = parseInt(getComputedStyle(mickey).getPropertyValue('top'));
 let mickeyLeft = parseInt(getComputedStyle(mickey).getPropertyValue('left'));
 let triangleTop = parseInt(getComputedStyle(triangle).getPropertyValue('top'));
@@ -93,10 +86,12 @@ let mouth_wrapperLeft = parseInt(getComputedStyle(mouth_wrapper).getPropertyValu
 
 
 
-//this function is used to change the top of the shape (on the Y direction) 
+/***************************************************************************
+ * this function is used to change the top of the shape (on the Y direction) 
+ ***************************************************************************/
 
 function mickey_y_direction() {
-    // mickeyTop -= +up.value
+
     triangleTop -= +up.value
     triangle2Top -= +up.value
     frameTop -= +up.value
@@ -115,7 +110,9 @@ function mickey_y_direction() {
     mouth_wrapperTop -= +up.value
 }
 
-//this function is used to change the left of the shape (on the X direction) 
+/***************************************************************************
+ * this function is used to change the top of the shape (on the X direction) 
+ ***************************************************************************/
 
 function mickey_x_direction() {
     // mickeyLeft += +left.value
@@ -177,8 +174,11 @@ transformButton.onclick = function () {
     mouth_wrapper.style.top = mouth_wrapperTop + 'px'
     mouth_wrapper.style.left = mouth_wrapperLeft + 'px'
 }
-//the default values of scaling inputs
 
+
+/***************************************************************************
+ *the default values of scaling inputs
+ ***************************************************************************/
 scaleX.value = +1
 scaleY.value = +1
 
@@ -188,9 +188,6 @@ let rotation = 0;
 
 //on this function when we click on the rotate button we will change the value of the rotation 
 //and add the value of the user rotation input
-
-let triangle_rotation_top = -triangleTop + 800 / 2
-let triangle_rotation_left = -triangleLeft + 850 / 2
 rotatingButton.onclick = function () {
     rotation = (rotation + +rotate.value) % 360
     mickey.style.transform = `rotate(${rotation}deg)`
@@ -225,6 +222,11 @@ rotatingButton.onclick = function () {
     left_face.style.transform += `scale(${+scaleX.value - mickey.style.transform},${+scaleY.value - mickey.style.transform})`
     frame.style.transform = `rotate(${rotation - mickey.style.transform}deg)`
     frame.style.transform += `scale(${+scaleX.value - mickey.style.transform},${+scaleY.value - mickey.style.transform})`
+
+    /*************************************************************************************
+    *this conditions is used to make sure that the scaling values is more than one 
+    *to guarantee that the shape will not disappear 
+    **************************************************************************************/
 
     if (+scaleX.value > 0 && +scaleY.value <= 0) {
         mickey.style.transform = `rotate(${rotation}deg)`
@@ -371,8 +373,11 @@ scalingButton.onclick = function () {
     frame.style.transform = `scale(${+scaleX.value - mickey.style.transform},${+scaleY.value - mickey.style.transform})`
     frame.style.transform += `rotate(${rotation - mickey.style.transform}deg)`
 
-    //this conditions is used to make sure that the scaling values is more than one 
-    //to guarantee that the shape will not disappear 
+
+    /*************************************************************************************
+    *this conditions is used to make sure that the scaling values is more than one 
+    *to guarantee that the shape will not disappear 
+    **************************************************************************************/
     if (+scaleX.value > 0 && +scaleY.value <= 0) {
         mickey.style.transform = `rotate(${rotation}deg)`
         mickey.style.transform += `scale(${+scaleX.value},1)`
