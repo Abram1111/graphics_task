@@ -1,4 +1,4 @@
-# <img  align="center" width= 65px  src="https://logos-world.net/wp-content/uploads/2021/11/Udemy-Emblem.png"> Udemy
+# <img  align="center" width= 65px  src="https://media.giphy.com/media/xThuWqDu0kUSQMcNHO/giphy.gif"> Computer Graphics
 
 <div align="center">
 
