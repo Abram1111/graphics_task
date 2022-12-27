@@ -61,7 +61,7 @@ https://github.com/Abram1111/graphics_task
 ## <img  align= center width= 70px height =70px src="https://img.genial.ly/5f91608064ad990c6ee12237/bd7195a3-a8bb-494b-8a6d-af48dd4deb4b.gif?genial&1643587200063"> Demo
 
 <div  align="center">
-<video src="https://user-images.githubusercontent.com/71986226/194441976-c623af31-1958-4c6f-8986-c95627389f8f.mp4">
+<video src="https://drive.google.com/file/d/1lQW4cVNpvShSzr9ltNT1R8Us0WjFBd-R/view?usp=share_link">
 </video> 
 </div>
 
