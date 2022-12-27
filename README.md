@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img height=350px src="https://about.udemy.com/wp-content/uploads/2022/03/TURBO-ANIMATION-CONCEPT.gif">
+<img height=350px src="https://media.giphy.com/media/xThuWqDu0kUSQMcNHO/giphy.gif">
 <div align="center"  width=10%>
 
 </div>
