@@ -73,7 +73,8 @@ https://github.com/Abram1111/graphics_task
 <br>
 <table >
   <tr>
-        <td align="center"><a href="https://github.com/MohamedNasser8"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Eslam Ashraf</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/MohamedNasser8"><img src="https://avatars.githubusercontent.com/u/66921605?s=400&v=4" width="150px;" alt=""/><br /><sub><b>Mohamed Nasser</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/MohamedNasser8"><img src="https://avatars.githubusercontent.com/u/66921605?s=400&v=4" width="150px;" alt=""/><br /><sub><b>Abram Gad</b></sub></a><br /></td>
   </tr>
 </table>
 
