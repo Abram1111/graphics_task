@@ -25,7 +25,7 @@
 <ul>
  <li>
 
-It is task in intern in bld.ai. It is **Building Udemy** website using **React.JS**, you can view courses ,content and instructor etc...,you can like and dislike comments. </li>
+It is task in intern in Copmuter Grphics It is **Control Shape** website using **HTML CSS JS**, you can translate ,rotate and transform shapes. </li>
 
  <li> The Project is built by
  
