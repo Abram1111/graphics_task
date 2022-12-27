@@ -30,13 +30,9 @@ It is task in intern in Copmuter Grphics It is **Control Shape** website using *
  <li> The Project is built by
  
  <ul>
-    <li> React Hooks (useState, useEffect) </li>
-    <li> React Components </li>
-    <li> Fetch API </li>
-    <li> Bootstrap and CSS module - for styling </li>
-    <li> Scrolling </li>
-    <li>Search bar </li>
-    <li> Dynamic Routing </li>
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> JS </li>
    </ul>
    </li>
 </ul>
@@ -51,25 +47,12 @@ It is task in intern in Copmuter Grphics It is **Control Shape** website using *
 <br>
 
 ```
-git clone https://github.com/EslamAsHhraf/Project-Two-bld-Eslam
+https://github.com/Abram1111/graphics_task
 ```
 
 </li>
-<li>Open terminal</li>
-<li>
+<li>Open index.html</li>
 
-```
-npm install
-```
-
-</li>
-<li>
-
-```
-npm start
-```
-
-</li>
 </ol>
 
 <hr style="background-color: #4b4c60"></hr>
@@ -90,7 +73,7 @@ npm start
 <br>
 <table >
   <tr>
-        <td align="center"><a href="https://github.com/EslamAsHhraf"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Eslam Ashraf</b></sub></a><br /></td>
+        <td align="center"><a href="https://github.com/MohamedNasser8"><img src="https://avatars.githubusercontent.com/u/71986226?v=4" width="150px;" alt=""/><br /><sub><b>Eslam Ashraf</b></sub></a><br /></td>
   </tr>
 </table>
 
